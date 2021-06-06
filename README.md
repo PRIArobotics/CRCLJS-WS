@@ -1,14 +1,15 @@
 # CRCLJS-WS
 CRCLJS Websocket Communication Interface
 
-## Usage
+The implemented [SocketIORobotConnection](https://github.com/PRIARobotics/CRCLJS-WS/main/SocketIORobotConnection.mjs) can connect to the websocket of the [CRCLJS WS Adapter](https://github.com/PRIARobotics/CRCLJS-WSAdapter) which forwards the CRCLJS commands to the actual Robots.
 
-Pseudo Code example:
+## Usage
 
 ```javascript
 import {Tools} from "@babylonjs/core";
 import {CommandFactory, RobotInterface} from 'crcljs';
 import {quaternionToEuler} from 'eulerutil';
+import {SocketIORobotConnection} fron './src/SocketIORobotConnection.mjs'
 
 const ROBOTSERVER = 'http://localhost:3000'
 console.log(`Connecting to crcljs ws adapter at ${ROBOTSERVER}`);
