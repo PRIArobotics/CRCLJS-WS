@@ -1,7 +1,12 @@
 # CRCLJS-WS
 CRCLJS Websocket Communication Interface
 
-`import {Tools} from "@babylonjs/core";
+## Usage
+
+Pseudo Code example:
+
+```javascript
+import {Tools} from "@babylonjs/core";
 import {CommandFactory, RobotInterface} from 'crcljs';
 import {quaternionToEuler} from 'eulerutil';
 
@@ -32,4 +37,4 @@ robotServerConnection.on('connect', () => {
     } catch (e){
         console.log(e.message)
     }
-}`
+}```
