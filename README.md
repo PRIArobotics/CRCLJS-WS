@@ -1,5 +1,14 @@
 # CRCLJS-WS
-CRCLJS Websocket Communication Interface
+
+Browser Websocket implementation of the queued streaming robot motion interface [CRCL-JS](https://github.com/PRIARobotics/CRCLJS), an adapted minimal JSON-based version of [CRCL](https://github.com/ros-industrial/crcl/blob/master/doc/Reference.md).
+
+There are also two specific implementations:
+
+- a general Javascript implementation with the reference: [CRCL-JS](https://github.com/PRIARobotics/CRCLJS)
+- a Node-JS specific implementation: [CRCL-JS-Node](https://github.com/PRIARobotics/CRCLJS-Node)
+
+
+### CRCLJS Websocket Communication Interface
 
 The implemented [SocketIORobotConnection](https://github.com/PRIArobotics/CRCLJS-WS/blob/main/src/SocketIORobotConnection.js) can connect to the websocket of the [CRCLJS WS Adapter](https://github.com/PRIARobotics/CRCLJS-WSAdapter) which forwards the CRCLJS commands to the robots. This enables CRCLJS robot communication in the browser since it does not depend on TCP.
 
